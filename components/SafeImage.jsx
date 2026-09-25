@@ -1,0 +1,1 @@
+"use client"; import Image from "next/image"; import {useState} from "react"; export default function SafeImage({src,alt,fallback="/logo.svg",...props}){const[f,setF]=useState(false);return <Image {...props} src={f||!src?fallback:src} alt={alt} unoptimized onError={()=>setF(true)}/> }

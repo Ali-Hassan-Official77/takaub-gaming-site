@@ -1,0 +1,1 @@
+export default function LoadingSkeleton({count=8}){return <div className="game-grid skeleton-grid" aria-hidden="true">{Array.from({length:count}).map((_,i)=><div className="skeleton-card" key={i}><div className="skeleton-image"/><div className="skeleton-lines"><span/><span/><span/></div></div>)}</div>}

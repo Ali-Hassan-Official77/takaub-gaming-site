@@ -1,0 +1,1 @@
+import LoadingSkeleton from "@/components/LoadingSkeleton"; export default function Loading(){return <><div className="hero-loading"><div className="content-shell"><div className="skeleton-pill"/><div className="skeleton-title wide"/><div className="skeleton-subtitle"/></div></div><section className="content-shell section-space"><LoadingSkeleton count={8}/></section></>}
