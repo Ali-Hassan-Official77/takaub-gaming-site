@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { rawgFetch } from "@/lib/rawg";
+export const runtime = 'edge';
 
 // GET /api/games/[id]
 export async function GET(_request, { params }) {

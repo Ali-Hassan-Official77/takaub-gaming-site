@@ -1,1 +1,3 @@
-import LoadingSkeleton from "@/components/LoadingSkeleton"; export default function Loading(){return <section className="content-shell browse-page"><div className="loading-head"><div className="skeleton-pill"/><div className="skeleton-title"/><div className="skeleton-subtitle"/></div><LoadingSkeleton count={8}/></section>}
+import LoadingSkeleton from "@/components/LoadingSkeleton";
+export const runtime = 'edge';
+export default function Loading(){return <section className="content-shell browse-page"><div className="loading-head"><div className="skeleton-pill"/><div className="skeleton-title"/><div className="skeleton-subtitle"/></div><LoadingSkeleton count={8}/></section>}

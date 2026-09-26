@@ -4,6 +4,7 @@ import { rawgFetch } from "@/lib/rawg";
 import RatingBadge from "@/components/RatingBadge";
 import SafeImage from "@/components/SafeImage";
 import FavoriteButton from "@/components/FavoriteButton";
+export const runtime = 'edge';
 export const revalidate=3600;
 async function getGame(id){return rawgFetch(`/games/${id}`);}
 export async function generateMetadata({params}){try{const g=await getGame(params.id);return{title:`${g.name} — TAKAGHUB`,description:g.description_raw?.slice(0,155)||`Explore ${g.name} on TAKAGHUB.`}}catch{return{title:"Game — TAKAGHUB"}}}
