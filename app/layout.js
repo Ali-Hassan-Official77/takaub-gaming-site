@@ -16,6 +16,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return <html lang="en" suppressHydrationWarning className={`${display.variable} ${sans.variable}`}>
-    <body><ThemeProvider><ToastProvider><div className="site-shell"><Navbar/><main>{children}</main><Footer/></div></ToastProvider></ThemeProvider></body>
+    <body><ThemeProvider><ToastProvider><div className="site-shell"><Navbar/><main>{children}</main><Footer/></div></ToastProvider></ThemeProvider>
+  <script src="https://cdn.zanderio.ai/widget/loader.js" data-id="wdg_qVmg9HUz3c9ATEfO26vfIE0v" defer></script>
+  </body>
   </html>;
 }
